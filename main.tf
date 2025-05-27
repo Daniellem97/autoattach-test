@@ -25,3 +25,4 @@ resource "spacelift_stack" "stack" {
   labels                 = ["autoattach:git-policy"]
   project_root           = "/"
 }
+
