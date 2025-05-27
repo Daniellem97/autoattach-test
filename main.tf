@@ -1,4 +1,11 @@
-provider "spacelift" {
+provider "spacelift" {}
+
+terraform {
+  required_providers {
+    spacelift = {
+      source = "spacelift-io/spacelift"
+    }
+  }
 }
 
 resource "spacelift_policy" "git_push_policy" {
