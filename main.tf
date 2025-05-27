@@ -8,6 +8,7 @@ terraform {
   }
 }
 
+
 resource "spacelift_policy" "git_push_policy" {
   name        = "Autoattach Git Push Policy"
   body        = file("${path.module}/policies/git_push.rego")
